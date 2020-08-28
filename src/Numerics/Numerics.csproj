@@ -2,6 +2,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Library</OutputType>
+      <WebSharperProject>Library</WebSharperProject>
     <TargetFramework>netstandard2.0</TargetFramework>
     <AssemblyName>MathNet.Numerics</AssemblyName>
     <RootNamespace>MathNet.Numerics</RootNamespace>
@@ -26,4 +27,9 @@ A couple immutable structs marked as readonly</PackageReleaseNotes>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
 
+    <ItemGroup>
+        <PackageReference Include="WebSharper" Version="4.5.0.290" />
+        <PackageReference Include="WebSharper.FSharp" Version="4.5.0.290" />
+    </ItemGroup>
+    
 </Project>
